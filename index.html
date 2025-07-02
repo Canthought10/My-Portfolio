@@ -1976,18 +1976,37 @@
       <div class="container">
         <div class="about__container about__container--hero-style">
           <div class="about__image about__img-gradient">
-            <img src="joh.jpg" alt="About John" class="about__img">
-                    </div>
+            <a href="#more-photos">
+              <img src="joh.jpg" alt="About John" class="about__img" style="cursor:pointer;">
+            </a>
+          </div>
           <div class="about__content">
             <h3 class="about__title">Full-Stack Developer & UI/UX Designer</h3>
             <p class="about__desc">
               With over 5 years of experience in web development and design, I specialize in creating beautiful, functional, and user-friendly digital solutions. My passion lies in combining technical expertise with creative vision to deliver exceptional results.<br><br>
               I believe in continuous learning and staying updated with the latest technologies and design trends. Whether it's a complex web application or a simple landing page, I approach every project with dedication and attention to detail.
             </p>
+            <a href="john valentine cv.pdf" download class="btn btn--gradient" style="display:inline-block;margin-top:0.3rem;">
+              <i class='bx bx-download'></i> Download CV
+            </a>
           </div>
                     </div>                                   
                 </div>
             </section>
+
+    <!-- Add this new section after the About section -->
+    <section id="more-photos" class="section section--alt" style="background:#1e293b;">
+      <div class="container" style="text-align:center;">
+        <h2>More Photos</h2>
+        <div style="display:flex; gap:1rem; justify-content:center; align-items:center; margin-top:1.5rem; flex-wrap:wrap;">
+          <img src="a.jpg" alt="A" style="width:230px; height:230px; object-fit:cover; border-radius:0.7rem;">
+          <img src="b.jpg" alt="B" style="width:230px; height:230px; object-fit:cover; border-radius:0.7rem;">
+          <img src="c.jpg" alt="C" style="width:230px; height:230px; object-fit:cover; border-radius:0.7rem;">
+          <img src="d.jpg" alt="D" style="width:230px; height:230px; object-fit:cover; border-radius:0.7rem;">
+          <img src="e.jpg" alt="E" style="width:230px; height:230px; object-fit:cover; border-radius:0.7rem;">
+        </div>
+      </div>
+    </section>
 
     <!-- Skills Section -->
     <section class="section" id="skills">
@@ -2041,24 +2060,17 @@
             <div class="section__header">
      </div>
                 <div class="projects__grid">
-                  <a href="http://192.168.0.97/lgu/" target="_blank" rel="noopener" class="project__card-link">
-                    <div class="project__card">
-                      <div class="project__image">
-                        <img src="assets/img/work1.jpg" alt="LGU Information System" class="project__img">
-                      </div>
-                      <div class="project__content">
-                        <h3 class="project__title">LGU Information System</h3>
-                        <p class="project__description">
-                          A comprehensive local government unit information system.
-                        </p>
-                        <div class="project__tech">
-                          <span class="project__tech-item">PHP</span>
-                          <span class="project__tech-item">MySQL</span>
-                          <span class="project__tech-item">JavaScript</span>
-                        </div>
-                      </div>
+                  <div class="project__card" onclick="window.open('http://192.168.0.97/lgu/', '_blank')" style="cursor:pointer;">
+                    <div class="project__image">
+                      <img src="loon-seal.png" alt="Municipality of Loon Seal" class="project__img lgu-seal">
                     </div>
-                  </a>
+                    <div class="project__content">
+                      <h3 class="project__title">LGU Information System</h3>
+                      <p class="project__description">
+                        A comprehensive local government unit information system.
+                      </p>
+                    </div>
+                  </div>
                 </div>
             </div>
                 </div>
